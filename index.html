@@ -7,11 +7,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0; /* Reset margin to 0 */
+            padding: 0; /* Reset padding to 0 */
             text-align: center;
+            background-color: #f5f5f5; /* Set a background color */
+        }
+        header {
+            background-color: #333; /* Set a different background color for the header */
+            color: white;
+            padding: 10px;
         }
         h1 {
-            color: #333;
+            color: #fff; /* Set text color for the header */
+        }
+        section {
+            padding: 40px;
         }
         p {
             color: #666;
@@ -20,6 +30,35 @@
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            box-sizing: border-box;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
@@ -30,6 +69,18 @@
     <section>
         <p>This is a basic index page for your website. Edit this file to add your content.</p>
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.lBE-_q8h23q9tOyt0wZqagAAAA%26pid%3DApi&f=1&ipt=8287642a51116018fabd78c49b9a0b558bc321dd40dabadd4f90899d6681376f&ipo=images" alt="Your Logo">
+        
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p><a href="#">Forgot Password?</a></p>
     </section>
     <footer>
         <p>&copy; 2024 Your Website Name. All rights reserved.</p>
